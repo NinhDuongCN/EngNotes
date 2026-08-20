@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap');
+
+:root {
+    --font-body: 'Lexend', sans-serif;
+    --font-display: 'Montserrat', sans-serif;
+    --ink: #17212b;
+    --muted: #66727d;
+    --paper: #f7f4ee;
+    --panel: #fffdf9;
+    --line: #e5dfd4;
+    --table-head: #f4f0e8;
+    --table-hover: #fff7e4;
+    --soft-text: #4e5b64;
+    --cell-text: #43515a;
+    --coral: #df6d52;
+    --coral-dark: #a94735;
+    --teal: #167d78;
+    --teal-text: #d9efeb;
+    --yellow: #f5c85b;
+    --shadow: 0 18px 45px rgba(48, 42, 32, .09);
+    --focus-ring: rgba(22, 125, 120, .18);
+}
+
+html[data-theme='dark'] {
+    --ink: #edf2f0;
+    --muted: #9daaa9;
+    --paper: #172326;
+    --panel: #202f31;
+    --line: #3c4c4c;
+    --table-head: #293a3b;
+    --table-hover: #31413e;
+    --soft-text: #c3cfcd;
+    --cell-text: #c0cdca;
+    --coral: #f18a6e;
+    --coral-dark: #ff9c80;
+    --teal: #257c75;
+    --teal-text: #d5f1ed;
+    --yellow: #f6d477;
+    --shadow: 0 18px 45px rgba(0, 0, 0, .2);
+    --focus-ring: rgba(50, 163, 154, .25);
+}

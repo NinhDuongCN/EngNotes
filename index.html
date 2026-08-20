@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EngNotes là sổ tay học tiếng Anh với các bài học ngữ pháp rõ ràng, dễ tra cứu.">
+    <meta name="theme-color" content="#df6d52">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>EngNotes | Sổ tay Tiếng Anh</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="/favicon_180.png">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <script src="assets/js/header.js" defer></script>
+    </header>
+    <main>
+        <div class="title-container">
+            <div class="eyebrow">A product of Nguyenhx</div>
+            <h1 class="title">EngNotes</h1>
+            <p class="subtitle">Sổ tay Tiếng Anh.</p>
+        </div>
+
+        <div class="content-container">
+            <section class="lesson-panel intro-panel" aria-labelledby="intro-title">
+                <div class="lesson-copy">
+                    <div class="panel-kicker">01 / Giới thiệu</div>
+                    <h2 id="intro-title">Học tiếng Anh rõ ràng hơn</h2>
+                    <p>EngNotes là sổ tay điện tử giúp bạn hệ thống hóa những điểm ngữ pháp quan trọng, tra cứu nhanh và học theo từng chủ đề.</p>
+                    <h3>Một không gian học tập vừa đủ</h3>
+                    <ul class="usage-list">
+                        <li>Nội dung được chia thành các bài học ngắn, tập trung vào điều cần nhớ.</li>
+                        <li>Công thức và ví dụ được trình bày cạnh nhau để dễ đối chiếu.</li>
+                        <li>Giao diện hỗ trợ light mode, dark mode và hiển thị tốt trên mobile.</li>
+                    </ul>
+                </div>
+                <aside class="rule-card" aria-label="Định hướng học tập">
+                    <div class="panel-kicker">Start here</div>
+                    <h2>Chọn một bài học</h2>
+                    <p>Bắt đầu từ phần nền tảng, sau đó quay lại tra cứu bất cứ khi nào bạn cần.</p>
+                    <div class="formula"><strong>Learn</strong> → practise → remember</div>
+                </aside>
+            </section>
+
+            <section class="lessons-section" aria-labelledby="lessons-title">
+                <div class="section-heading lesson-heading">
+                    <div>
+                        <div class="panel-kicker">02 / Bài học</div>
+                        <h2 id="lessons-title">Khám phá các chủ đề</h2>
+                        <p>Chọn bài học để mở nội dung chi tiết.</p>
+                    </div>
+                    <label class="lesson-search-wrap">
+                        <span class="sr-only">Tìm kiếm bài học</span>
+                        <input class="search" id="lesson-search" type="search" placeholder="Tìm bài học..." aria-label="Tìm kiếm bài học">
+                    </label>
+                </div>
+                <div class="lessons-grid" id="lesson-list">
+                    <a class="lesson-card" href="irregular-verbs/" data-search="irregular verbs động từ bất quy tắc">
+                        <span class="lesson-number">01</span>
+                        <h3>Irregular Verbs<br><small>Động từ bất quy tắc</small></h3>
+                        <p>Tra cứu các dạng V1, V2, V3 và hiểu cách dùng động từ bất quy tắc trong câu.</p>
+                        <span class="card-link">Mở bài học <span aria-hidden="true">→</span></span>
+                    </a>
+                    <a class="lesson-card" href="tenses/" data-search="tenses các thì trong tiếng anh thì">
+                        <span class="lesson-number">02</span>
+                        <h3>Tenses<br><small>Các thì trong tiếng Anh</small></h3>
+                        <p>Tìm hiểu định nghĩa, cách dùng và cấu trúc câu của 12 thì tiếng Anh.</p>
+                        <span class="card-link">Mở bài học <span aria-hidden="true">→</span></span>
+                    </a>
+                </div>
+                <div class="empty-row" id="lesson-empty">Không tìm thấy bài học phù hợp.</div>
+            </section>
+        </div>
+    </main>
+    <footer><script src="assets/js/footer.js"></script></footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

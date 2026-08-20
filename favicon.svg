@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="favicon" data-name="favicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <style>
+    path, line {
+      stroke: #111;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      path, line {
+        stroke: #f9f9f9;
+      }
+    }
+  </style>
+  <g>
+    <path d="M13.5,3.56c1.71-.72,3.91-1.75,5.73-2.29.29-.09.91-.26,1.5-.07.45.15.81.45.99.88l8.04,20c.35.86-.2,1.89-1.23,2.3l-15.77,6.34c-1.02.41-2.14.05-2.48-.81L2.24,9.91c-.35-.86.2-1.89,1.23-2.3,1.99-.8,3.65-1.51,5.74-2.33" style=" stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    <line x1="10.08" y1="7.63" x2="8.16" y2="2.85" style=" stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+  </g>
+  <line x1="8.56" y1="12.3" x2="18.77" y2="8.19" style=" stroke-linecap: round; stroke-linejoin: round;"/>
+  <line x1="11.13" y1="18.67" x2="21.37" y2="14.55" style=" stroke-linecap: round; stroke-linejoin: round;"/>
+  <line x1="9.85" y1="15.48" x2="12.63" y2="14.36" style=" stroke-linecap: round; stroke-linejoin: round;"/>
+  <line x1="12.41" y1="21.86" x2="15.19" y2="20.74" style=" stroke-linecap: round; stroke-linejoin: round;"/>
+  <line x1="13.69" y1="25.05" x2="23.9" y2="20.94" style=" stroke-linecap: round; stroke-linejoin: round;"/>
+</svg>
