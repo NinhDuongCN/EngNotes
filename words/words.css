@@ -1,0 +1,89 @@
+.words-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 16px;
+}
+
+.word-card {
+    position: relative;
+    min-width: 0;
+    padding: 22px 20px 20px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: color-mix(in srgb, var(--panel) 88%, var(--teal));
+    height: fit-content;
+}
+
+.word-card summary {
+    cursor: pointer;
+    list-style: none;
+}
+
+.word-card h3 {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    /* min-height: 48px; */
+    margin: 0 0 14px;
+    color: var(--ink);
+    font-family: var(--font-display);
+    font-size: 1rem;
+    line-height: 1.35;
+
+    &>.word-type {
+        color: var(--teal);
+        font-family: var(--font-body);
+        font-size: .8rem;
+        font-weight: 500;
+        /* margin-left: 6px; */
+    }
+
+    &>.word-VI{
+        font-size: 1rem;
+        font-weight: 500;
+        margin-left: 6px;
+    }
+}
+
+.word-card h3 small {
+    color: var(--teal);
+    font-family: var(--font-body);
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.word-card p {
+    /* min-height: 52px; */
+    margin: 0;
+    color: var(--body-copy);
+    font-size: .84rem;
+    line-height: 1.55;
+    display: inline-flex;
+    justify-content: start;
+    align-items: baseline;
+    gap: 1ch;
+
+    &>.word-type {
+        color: var(--teal);
+        font-family: var(--font-body);
+        font-size: .8rem;
+        font-weight: 500;
+        /* margin-left: 6px; */
+    }
+
+    &>.word-type::before {
+        content: "(";
+    }
+    &>.word-type::after{
+        content: ")";
+    }
+}
+
+.word-card p strong {
+    color: var(--ink);
+}
+
+.word-card .structure {
+    min-height: unset;
+}
