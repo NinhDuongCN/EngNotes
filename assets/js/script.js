@@ -48,3 +48,27 @@ const passiveEmpty = document.querySelector('#passive-empty');
 if (passiveSearch && passiveEmpty) {
     passiveSearch.addEventListener('input', createSearchHandler(passiveCards, passiveEmpty));
 }
+
+const modalSearch = document.querySelector('#modal-search');
+const modalCards = [...document.querySelectorAll('#modal-list .tense-card')];
+const modalEmpty = document.querySelector('#modal-empty');
+
+if (modalSearch && modalEmpty) {
+    modalSearch.addEventListener('input', createSearchHandler(modalCards, modalEmpty));
+}
+
+const conditionalSearch = document.querySelector('#conditional-search');
+const conditionalCards = [...document.querySelectorAll('#conditional-list .tense-card')];
+const conditionalEmpty = document.querySelector('#conditional-empty');
+
+if (conditionalSearch && conditionalEmpty) {
+    conditionalSearch.addEventListener('input', createSearchHandler(conditionalCards, conditionalEmpty));
+}
+
+const phrasalSearch = document.querySelector('#phrasal-search');
+const phrasalRows = [...document.querySelectorAll('#phrasal-list tr')];
+const phrasalEmpty = document.querySelector('#phrasal-empty');
+
+if (phrasalSearch && phrasalEmpty) {
+    phrasalSearch.addEventListener('input', createSearchHandler(phrasalRows, phrasalEmpty));
+}
