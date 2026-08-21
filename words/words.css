@@ -59,7 +59,7 @@
     color: var(--body-copy);
     font-size: .84rem;
     line-height: 1.55;
-    display: inline-flex;
+    display: flex;
     justify-content: start;
     align-items: baseline;
     gap: 1ch;
