@@ -10,33 +10,107 @@ body {
     line-height: 1.6;
     transition: color .2s ease, background-color .2s ease;
 }
-    .lessons-section {
-        padding: 28px 30px 30px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: var(--panel);
-        box-shadow: var(--shadow);
-    }
 
-    .lesson-heading {
-        display: flex;
-        align-items: end;
-        justify-content: space-between;
-        gap: 20px;
-    }
+.lessons-section {
+    padding: 28px 30px 30px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--panel);
+    box-shadow: var(--shadow);
+}
 
-    .lesson-search-wrap { flex: 0 0 260px; }
-    .lessons-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-    .lesson-card { display: flex; min-height: 250px; flex-direction: column; padding: 22px 20px 20px; border: 1px solid var(--line); border-radius: 6px; color: inherit; background: color-mix(in srgb, var(--panel) 88%, var(--teal)); text-decoration: none; transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease; }
-    .lesson-card:hover { border-color: var(--teal); box-shadow: var(--shadow); transform: translateY(-3px); }
-    .lesson-card:focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 3px; }
-    .lesson-number { margin-bottom: 10px; color: var(--coral); font-family: var(--font-display); font-size: .72rem; font-weight: 800; letter-spacing: .12em; }
-    .lesson-card h3 { margin: 0 0 14px; color: var(--ink); font-family: var(--font-display); font-size: 1.05rem; line-height: 1.35; }
-    .lesson-card h3 small { color: var(--teal); font-family: var(--font-body); font-size: .8rem; font-weight: 500; }
-    .lesson-card p { margin: 0; color: var(--body-copy); font-size: .88rem; line-height: 1.55; }
-    .card-link { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: auto; padding-top: 20px; color: var(--coral-dark); font-family: var(--font-display); font-size: .78rem; font-weight: 700; }
-    .card-link span { font-size: 1.1rem; }
-    .lesson-card[hidden] { display: none; }
+.lesson-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.lesson-search-wrap {
+    flex: 0 0 260px;
+}
+
+.lessons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.lesson-card {
+    display: flex;
+    min-height: 250px;
+    flex-direction: column;
+    padding: 22px 20px 20px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    color: inherit;
+    background: color-mix(in srgb, var(--panel) 88%, var(--teal));
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.lesson-card:hover {
+    border-color: var(--teal);
+    box-shadow: var(--shadow);
+    transform: translateY(-3px);
+}
+
+.lesson-card:focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 3px;
+}
+
+.lesson-number {
+    margin-bottom: 10px;
+    color: var(--coral);
+    font-family: var(--font-display);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .12em;
+}
+
+.lesson-card h3 {
+    margin: 0 0 14px;
+    color: var(--ink);
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    line-height: 1.35;
+}
+
+.lesson-card h3 small {
+    color: var(--teal);
+    font-family: var(--font-body);
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.lesson-card p {
+    margin: 0;
+    color: var(--body-copy);
+    font-size: .88rem;
+    line-height: 1.55;
+}
+
+.card-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+    padding-top: 20px;
+    color: var(--coral-dark);
+    font-family: var(--font-display);
+    font-size: .78rem;
+    font-weight: 700;
+}
+
+.card-link span {
+    font-size: 1.1rem;
+}
+
+.lesson-card[hidden] {
+    display: none;
+}
 
 body::before {
     content: '';
@@ -54,6 +128,10 @@ header {
     max-width: 1180px;
     margin: 0 auto;
     padding: 32px 28px 18px;
+    position: sticky;
+    top: 0px;
+    background: var(--paper);
+    z-index: 1;
 }
 
 a.logo {
@@ -451,7 +529,7 @@ footer {
     font-size: .8rem;
     text-align: center;
 
-    & a{
+    & a {
         color: inherit;
         font-weight: 500;
         text-decoration: underline;
@@ -541,4 +619,13 @@ footer {
         grid-template-columns: 1fr;
         gap: 14px;
     }
+}
+
+
+@media print {
+    body::before,
+    .theme-toggle {
+        display: none;
+    }
+
 }

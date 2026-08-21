@@ -72,3 +72,36 @@ const phrasalEmpty = document.querySelector('#phrasal-empty');
 if (phrasalSearch && phrasalEmpty) {
     phrasalSearch.addEventListener('input', createSearchHandler(phrasalRows, phrasalEmpty));
 }
+
+const newSearches = [
+    ['#to-be-search', '#to-be-list .tense-card', '#to-be-empty'],
+    ['#going-search', '#going-list .tense-card', '#going-empty'],
+    ['#reported-search', '#reported-list .tense-card', '#reported-empty'],
+    ['#clauses-search', '#clauses-list .tense-card', '#clauses-empty'],
+    ['#articles-search', '#articles-list .tense-card', '#articles-empty'],
+    ['#prepositions-search', '#prepositions-list .tense-card', '#prepositions-empty'],
+    ['#collocations-search', '#collocations-list tr', '#collocations-empty'],
+    ['#idioms-search', '#idioms-list tr', '#idioms-empty'],
+    ['#verbs-search', '#verbs-list .tense-card', '#verbs-empty'],
+    ['#used-search', '#used-list .tense-card', '#used-empty'],
+    ['#nouns-search', '#nouns-list .tense-card', '#nouns-empty'],
+    ['#pronouns-search', '#pronouns-list .tense-card', '#pronouns-empty'],
+    ['#adjectives-search', '#adjectives-list .tense-card', '#adjectives-empty'],
+    ['#comparisons-search', '#comparisons-list .tense-card', '#comparisons-empty'],
+    ['#simple-search', '#simple-list .tense-card', '#simple-empty'],
+    ['#compound-search', '#compound-list .tense-card', '#compound-empty'],
+    ['#complex-search', '#complex-list .tense-card', '#complex-empty'],
+    ['#tags-search', '#tags-list .tense-card', '#tags-empty'],
+    ['#inversion-search', '#inversion-list .tense-card', '#inversion-empty'],
+    ['#cleft-search', '#cleft-list .tense-card', '#cleft-empty']
+];
+
+newSearches.forEach(([searchSelector, itemSelector, emptySelector]) => {
+    const search = document.querySelector(searchSelector);
+    const items = [...document.querySelectorAll(itemSelector)];
+    const empty = document.querySelector(emptySelector);
+
+    if (search && empty) {
+        search.addEventListener('input', createSearchHandler(items, empty));
+    }
+});
