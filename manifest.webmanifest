@@ -1,7 +1,7 @@
 {
     "name": "EngNotes - Sổ tay Tiếng Anh",
     "short_name": "EngNotes",
-    "description": "Sổ tay học tiếng Anh với các bài học ngữ pháp rõ ràng, dễ tra cứu.",
+    "description": "Sổ tay học tiếng Anh với các bài học ngữ pháp, từ vựng rõ ràng, dễ tra cứu.",
     "lang": "vi",
     "dir": "ltr",
     "start_url": "/",
