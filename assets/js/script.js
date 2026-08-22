@@ -73,6 +73,14 @@ if (phrasalSearch && phrasalEmpty) {
     phrasalSearch.addEventListener('input', createSearchHandler(phrasalRows, phrasalEmpty));
 }
 
+const wordSearch = document.querySelector('#word-search');
+const wordCards = [...document.querySelectorAll('#words-list .word-card')];
+const wordEmpty = document.querySelector('#words-empty');
+
+if (wordSearch && wordEmpty) {
+    wordSearch.addEventListener('input', createSearchHandler(wordCards, wordEmpty));
+}
+
 const newSearches = [
     ['#to-be-search', '#to-be-list .tense-card', '#to-be-empty'],
     ['#going-search', '#going-list .tense-card', '#going-empty'],
@@ -93,7 +101,8 @@ const newSearches = [
     ['#complex-search', '#complex-list .tense-card', '#complex-empty'],
     ['#tags-search', '#tags-list .tense-card', '#tags-empty'],
     ['#inversion-search', '#inversion-list .tense-card', '#inversion-empty'],
-    ['#cleft-search', '#cleft-list .tense-card', '#cleft-empty']
+    ['#cleft-search', '#cleft-list .tense-card', '#cleft-empty'],
+    ['#word-search', "#words-list .word-card", "#words-empty"],
 ];
 
 newSearches.forEach(([searchSelector, itemSelector, emptySelector]) => {
