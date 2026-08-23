@@ -1,8 +1,10 @@
-const VERSION = '1.0.2608.233';
+const VERSION = '1.0.2608.24';
 const CACHE_NAME = 'engnotes-v' + VERSION;
 const APP_SHELL = [
     '/',
     '/index.html',
+    '/about/',
+    '/about/about.css'
     '/adjectives-adverbs/',
     '/articles/',
     '/be-going-to/',
