@@ -1,4 +1,4 @@
-const VERSION = '1.0.2608.22';
+const VERSION = '1.0.2608.23';
 const CACHE_NAME = 'engnotes-v' + VERSION;
 const APP_SHELL = [
     '/',
