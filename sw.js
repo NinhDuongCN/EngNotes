@@ -1,5 +1,5 @@
-const VERSION = '1.0.2608.24';
-const CACHE_NAME = 'engnotes-v' + VERSION;
+//const VERSION = '1.0.2608.24';
+const CACHE_NAME = 'engnotes-v' +(Date.now());// + VERSION;
 const APP_SHELL = [
     '/',
     '/index.html',
