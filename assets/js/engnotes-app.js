@@ -2,6 +2,7 @@ function createCard_EngNotes(){
     const card = document.createElement("article");
     card.classList.add("card");
     card.classList.add("active");
+    card.classList.add("maximized");
     card.id = "EngNotes";
     card.innerHTML = `
     <div class="card-controllers">
@@ -11,7 +12,7 @@ function createCard_EngNotes(){
         <a class="card-controller btn close"></a>
     </div>
     <div class="card-body">
-        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay; encrypted-media"
+        <iframe width="100%" height="300" frameborder="no" allow="autoplay; encrypted-media"
             src="https://engnotes.nguyenhx.vn"></iframe>
     </div>
 `;
