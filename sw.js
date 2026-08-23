@@ -1,4 +1,4 @@
-const VERSION = '1.0.2608.23';
+const VERSION = '1.0.2608.233';
 const CACHE_NAME = 'engnotes-v' + VERSION;
 const APP_SHELL = [
     '/',
@@ -16,7 +16,7 @@ const APP_SHELL = [
     '/idioms/',
     '/inversion/',
     '/irregular-verbs/',
-    '/model-verbs/',
+    '/modal-verbs/',
     '/nouns/',
     '/passive-voice/',
     '/phrasal-verbs/',
@@ -30,11 +30,14 @@ const APP_SHELL = [
     '/used-to/',
     '/verbs/',
     '/words/',
+    '/words/words.css',
     '/assets/css/theme.css',
     '/assets/css/styles.css',
     '/assets/js/header.js',
     '/assets/js/footer.js',
     '/assets/js/script.js',
+    '/assets/fonts/Lexend-VariableFont_wght.ttf',
+    '/assets/fonts/Montserrat-VariableFont_wght.ttf',
     '/manifest.webmanifest',
     '/favicon.svg',
     '/favicon_192.png',
@@ -46,6 +49,8 @@ self.addEventListener('install', (event) => {
         caches.open(CACHE_NAME)
             .then((cache) => cache.addAll(APP_SHELL))
             .then(() => self.skipWaiting())
+        
+
     );
 });
 
