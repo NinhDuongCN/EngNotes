@@ -91,6 +91,15 @@ body {
     line-height: 1.55;
 }
 
+a.card-link{
+    text-decoration: none;
+}
+a.card-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: .2lh;
+}
+
 .card-link {
     display: flex;
     justify-content: space-between;
