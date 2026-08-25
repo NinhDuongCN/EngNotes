@@ -33,6 +33,7 @@ const APP_SHELL = [
     '/verbs/',
     '/words/',
     '/words/words.css',
+    '/words/words.js',
     '/assets/css/theme.css',
     '/assets/css/styles.css',
     '/assets/js/header.js',
