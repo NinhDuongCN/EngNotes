@@ -11,6 +11,30 @@ body {
     transition: color .2s ease, background-color .2s ease;
 }
 
+.readable:hover{
+    text-decoration: underline;
+    text-underline-offset: .2lh;
+    position: relative;
+    cursor: pointer;
+
+    &::after{
+        content: "Click để nghe";
+        position: absolute;
+        left: 0;
+        top: 1.5lh;
+        display: block;
+        text-wrap: nowrap;
+        width: fit-content;
+        text-align: left;
+        font-size: small;
+        font-weight: normal;
+        margin: 0;
+        background-color: var(--panel);
+        padding: .2lh 1ch;
+        border-radius: .2lh;
+    }
+}
+
 .lessons-section {
     padding: 28px 30px 30px;
     border: 1px solid var(--line);

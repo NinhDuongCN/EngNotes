@@ -88,6 +88,29 @@
     min-height: unset;
 }
 
+.word-EN:hover{
+    text-decoration: underline;
+    text-underline-offset: .2lh;
+    position: relative;
+    cursor: pointer;
+
+    &::after{
+        content: "Click để nghe";
+        position: absolute;
+        left: 0;
+        top: 1.5lh;
+        display: block;
+        text-wrap: nowrap;
+        width: fit-content;
+        text-align: left;
+        font-size: small;
+        font-weight: normal;
+        background-color: var(--panel);
+        padding: .2lh 1ch;
+        border-radius: .2lh;
+    }
+}
+
 @media (max-width: 768px) {
     .words-grid {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
