@@ -5,7 +5,7 @@
         if(target.classList.contains("readable")){
             const utterance = new SpeechSynthesisUtterance(target.textContent);
             utterance.lang = 'en-US';   
-            utterance.rate = 1;         
+            utterance.rate = .8;         
             utterance.pitch = 1;        
             speechSynthesis.speak(utterance);
         }
