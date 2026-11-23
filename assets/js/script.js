@@ -115,6 +115,7 @@ const newSearches = [
     ['#tags-search', '#tags-list .tense-card', '#tags-empty'],
     ['#inversion-search', '#inversion-list .tense-card', '#inversion-empty'],
     ['#cleft-search', '#cleft-list .tense-card', '#cleft-empty'],
+    ['#sentence-structures-search', '#sentence-structures-list .tense-card', '#sentence-structures-empty'],
     ['#word-search', "#words-list .word-card", "#words-empty"],
 ];
 

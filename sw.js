@@ -27,6 +27,7 @@ const APP_SHELL = [
     '/question-tags/',
     '/reported-speech/',
     '/simple-sentences/',
+    '/sentence-structures/',
     '/tenses/',
     '/to-be/',
     '/used-to/',
